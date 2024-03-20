@@ -70,7 +70,8 @@ const ReserveTable = ({ setReservationFlow }: Props) => {
         // Om inga bord är tillgängliga för någon av tiderna
         // Rensa listan med tillgängliga tider och dölj knapparna
         setFindBookings([]);
-        setShouldShowButtons(false);
+        setShouldShowButtons(shouldShowButtons);
+        setHasCheckedAvailability(hasCheckedAvailability);
       }
     }
   };
